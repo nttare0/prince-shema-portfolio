@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Github, Linkedin, ArrowRight, ExternalLink, School, Code, Database, Globe, Smartphone, Cloud, GitBranch } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin, ArrowRight, ExternalLink, Code, Database, Globe, Smartphone, Cloud, GitBranch } from "lucide-react";
 import ntareProfileImage from "@/assets/ntare-profile.jpg";
 
 // === Helper data ===
@@ -80,20 +80,6 @@ const SKILLS = [
   },
 ];
 
-const EDUCATION = [
-  {
-    school: "University of Technology",
-    program: "Bachelor of Science in Software Engineering",
-    period: "2021 – Present",
-    details: "Focused on software development, data structures, algorithms, and modern programming paradigms. Currently pursuing degree with excellent academic standing.",
-  },
-  {
-    school: "Online Learning Platforms",
-    program: "Professional Certifications",
-    period: "2020 – Present",
-    details: "Completed various certifications in web development, cloud computing, and emerging technologies including AWS and Full-Stack Development.",
-  },
-];
 
 const PROJECTS = [
   {
@@ -205,7 +191,6 @@ export default function ModernResumeSite() {
               ["About", "#about"],
               ["Experience", "#experience"],
               ["Skills", "#skills"],
-              ["Education", "#education"],
               ["Projects", "#projects"],
               ["Contact", "#contact"],
             ].map(([label, href]) => (
@@ -319,24 +304,6 @@ export default function ModernResumeSite() {
         </div>
       </section>
 
-      {/* EDUCATION */}
-      <section id="education" className="max-w-6xl mx-auto px-4 py-8">
-        {sectionTitle("Education")}
-        <div className="grid md:grid-cols-2 gap-5">
-          {EDUCATION.map((ed) => (
-            <HoverCard key={ed.school}>
-              <div className="flex items-start justify-between">
-                <div>
-                  <h4 className="text-white font-semibold flex items-center gap-2"><School size={18}/> {ed.school}</h4>
-                  <p className="text-sm text-slate-300">{ed.program}</p>
-                </div>
-                <span className="text-xs text-slate-400">{ed.period}</span>
-              </div>
-              <p className="mt-3 text-sm text-slate-300">{ed.details}</p>
-            </HoverCard>
-          ))}
-        </div>
-      </section>
 
       {/* PROJECTS */}
       <section id="projects" className="max-w-6xl mx-auto px-4 py-8">
