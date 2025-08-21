@@ -262,7 +262,7 @@ export default function ModernResumeSite() {
                   <h3 className="text-lg font-semibold text-white">{job.company} <span className="text-slate-400 font-normal">· {job.sector}</span></h3>
                   <p className="text-sm text-slate-300">{job.role}</p>
                 </div>
-                <span className="text-xs text-slate-400">{job.period}</span>
+            <span className="text-xs text-slate-400">{job.period}</span>
               </div>
               <ul className="mt-3 space-y-2 text-sm text-slate-300 list-disc pl-5">
                 {job.bullets.map((b, i) => (
