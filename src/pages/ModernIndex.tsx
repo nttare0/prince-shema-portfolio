@@ -10,7 +10,7 @@ const PROFILE = {
   location: "Kabuga, Rwanda",
   phoneDisplay: "0790 824 205",
   phoneIntl: "+250790824205",
-  email: "ntare.prince@example.com",
+  email: "nttare0@gmail.com",
   pictureAlt: "Portrait of Ntare Shema Prince",
   summary:
     "Software engineer and student with 1–2 years' experience building responsive web apps, APIs, and UI components. Passionate about clean code, performance, and delightful UX.",
