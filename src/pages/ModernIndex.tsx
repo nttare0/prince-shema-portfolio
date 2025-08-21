@@ -16,7 +16,7 @@ const PROFILE = {
     "Software engineer and student with 1–2 years' experience building responsive web apps, APIs, and UI components. Passionate about clean code, performance, and delightful UX.",
   socials: {
     github: "https://github.com/ntare-prince",
-    linkedin: "https://www.linkedin.com/in/ntare-prince",
+    linkedin: "https://www.linkedin.com/in/ntare-shema-prince-6a287035a",
     instagram: "https://www.instagram.com/ntare_shema_prince/",
     portfolio: "#projects",
   },
