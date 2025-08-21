@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Github, Linkedin, Instagram, ArrowRight, ExternalLink, Code, Database, Globe, Smartphone, Cloud, GitBranch } from "lucide-react";
 import ntareProfileImage from "@/assets/ntare-profile.jpg";
 import logoImage from "@/assets/logo.png";
@@ -121,13 +120,9 @@ const Avatar = () => (
 
 // === Smooth card wrapper ===
 const HoverCard = ({ children }: { children: React.ReactNode }) => (
-  <motion.div
-    whileHover={{ y: -4, scale: 1.01 }}
-    transition={{ type: "spring", stiffness: 260, damping: 18 }}
-    className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md shadow-lg p-5"
-  >
+  <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md shadow-lg p-5 hover:translate-y-[-4px] hover:scale-105 transition-transform duration-300 ease-out">
     {children}
-  </motion.div>
+  </div>
 );
 
 export default function ModernResumeSite() {
@@ -214,14 +209,9 @@ export default function ModernResumeSite() {
         <div className="grid md:grid-cols-[auto,1fr] items-center gap-6">
           <Avatar />
           <div>
-            <motion.h1
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.45 }}
-              className="text-2xl md:text-4xl font-extrabold tracking-tight text-white"
-            >
+            <h1 className="text-2xl md:text-4xl font-extrabold tracking-tight text-white animate-fade-in">
               {PROFILE.name}
-            </motion.h1>
+            </h1>
             <p className="mt-2 text-sm md:text-base text-slate-300">
               {PROFILE.title}
             </p>
