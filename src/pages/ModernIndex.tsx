@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Github, Linkedin, Instagram, ArrowRight, ExternalLink, Code, Database, Globe, Smartphone, Cloud, GitBranch } from "lucide-react";
 import ntareProfileImage from "@/assets/ntare-profile.jpg";
+import logoImage from "@/assets/logo.png";
 
 // === Helper data ===
 const PROFILE = {
@@ -110,7 +111,7 @@ const PROJECTS = [
 const Avatar = () => (
   <div className="relative w-28 h-28 rounded-2xl overflow-hidden ring-2 ring-white/50 shadow-xl">
     <img
-      src={ntareProfileImage}
+      src={logoImage}
       alt={PROFILE.pictureAlt}
       className="w-full h-full object-cover"
     />
@@ -184,7 +185,7 @@ export default function ModernResumeSite() {
       <header className="sticky top-0 z-30 backdrop-blur supports-[backdrop-filter]:bg-white/5 border-b border-white/10">
         <nav className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
           <a href="#top" className="text-sm font-bold tracking-wide flex items-center gap-2">
-            <span className={`${accentGrad} bg-clip-text text-transparent`}>NSP</span>
+            <img src={logoImage} alt="Logo" className="w-8 h-8" />
             <span className="hidden sm:inline text-slate-300">Portfolio</span>
           </a>
           <ul className="flex items-center gap-4 text-sm">
