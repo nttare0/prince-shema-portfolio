@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Github, Linkedin, ArrowRight, ExternalLink, Code, Database, Globe, Smartphone, Cloud, GitBranch } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin, Instagram, ArrowRight, ExternalLink, Code, Database, Globe, Smartphone, Cloud, GitBranch } from "lucide-react";
 import ntareProfileImage from "@/assets/ntare-profile.jpg";
 
 // === Helper data ===
@@ -17,6 +17,7 @@ const PROFILE = {
   socials: {
     github: "https://github.com/ntare-prince",
     linkedin: "https://www.linkedin.com/in/ntare-prince",
+    instagram: "https://www.instagram.com/ntare_shema_prince/",
     portfolio: "#projects",
   },
 };
@@ -228,9 +229,7 @@ export default function ModernResumeSite() {
               <a href={`tel:${PROFILE.phoneIntl}`} className="inline-flex items-center gap-1 hover:underline">
                 <Phone size={16}/> {PROFILE.phoneDisplay}
               </a>
-              <a href={`mailto:${PROFILE.email}`} className="inline-flex items-center gap-1 hover:underline">
-                <Mail size={16}/> {PROFILE.email}
-              </a>
+              <a href={PROFILE.socials.instagram} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 hover:underline"><Instagram size={16}/> Instagram</a>
               <a href={PROFILE.socials.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 hover:underline"><Github size={16}/> GitHub</a>
               <a href={PROFILE.socials.linkedin} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 hover:underline"><Linkedin size={16}/> LinkedIn</a>
             </div>
