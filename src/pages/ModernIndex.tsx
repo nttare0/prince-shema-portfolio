@@ -180,7 +180,7 @@ export default function ModernResumeSite() {
       <header className="sticky top-0 z-30 backdrop-blur supports-[backdrop-filter]:bg-white/5 border-b border-white/10">
         <nav className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
           <a href="#top" className="text-sm font-bold tracking-wide flex items-center gap-2">
-            <img src={logoImage} alt="Logo" className="w-8 h-8" />
+            <img src={logoImage} alt="Logo" className="w-12 h-12" />
             <span className="hidden sm:inline text-slate-300">Portfolio</span>
           </a>
           <ul className="flex items-center gap-4 text-sm">
