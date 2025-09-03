@@ -110,7 +110,7 @@ const PROJECTS = [
 const Avatar = () => (
   <div className="relative w-28 h-28 rounded-2xl overflow-hidden ring-2 ring-white/50 shadow-xl">
     <img
-      src={logoImage}
+      src={ntareProfileImage}
       alt={PROFILE.pictureAlt}
       className="w-full h-full object-cover"
     />
