@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Mail, Phone, MapPin, Github, Linkedin, Instagram, ArrowRight, ExternalLink, Code, Database, Globe, Smartphone, Cloud, GitBranch } from "lucide-react";
 import ntareProfileImage from "@/assets/ntare-profile.jpg";
-import logoImage from "@/assets/logo.png";
+const logoImage = "/lovable-uploads/0cdbe556-1463-4f6e-b978-577927f27c23.png";
 
 // === Helper data ===
 const PROFILE = {
