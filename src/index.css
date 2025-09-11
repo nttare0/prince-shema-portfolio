@@ -135,14 +135,51 @@ All colors MUST be HSL.
     animation: scale-in 0.5s ease-out forwards;
   }
 
-  /* Hover effects */
+  /* Enhanced hover effects */
   .hover-lift {
     transition: var(--transition-smooth);
   }
   
   .hover-lift:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-medium);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--shadow-strong);
+  }
+
+  .hover-glow {
+    transition: var(--transition-smooth);
+  }
+
+  .hover-glow:hover {
+    box-shadow: 0 0 30px hsl(var(--primary) / 0.4);
+    transform: scale(1.05);
+  }
+
+  .hover-bounce:hover {
+    animation: wiggle 0.5s ease-in-out;
+  }
+
+  /* Stagger animations */
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-5 { animation-delay: 0.5s; }
+
+  /* Interactive elements */
+  .interactive-card {
+    transition: var(--transition-bounce);
+    cursor: pointer;
+  }
+
+  .interactive-card:hover {
+    transform: translateY(-12px) rotateY(5deg);
+    box-shadow: var(--shadow-strong);
+  }
+
+  /* Parallax effect */
+  .parallax-slow {
+    transform: translateZ(0);
+    will-change: transform;
   }
 
   .nav-link {

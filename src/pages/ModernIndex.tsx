@@ -179,8 +179,8 @@ export default function ModernResumeSite() {
       {/* NAV */}
       <header className="sticky top-0 z-30 backdrop-blur supports-[backdrop-filter]:bg-white/5 border-b border-white/10">
         <nav className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-          <a href="#top" className="text-sm font-bold tracking-wide flex items-center gap-2">
-            <img src={logoImage} alt="Logo" className="w-12 h-12" />
+          <a href="#top" className="text-sm font-bold tracking-wide flex items-center gap-2 hover-glow">
+            <img src={logoImage} alt="Logo" className="w-12 h-12 animate-float hover-bounce" />
             <span className="hidden sm:inline text-slate-300">Portfolio</span>
           </a>
           <ul className="flex items-center gap-4 text-sm">
@@ -190,11 +190,11 @@ export default function ModernResumeSite() {
               ["Skills", "#skills"],
               ["Projects", "#projects"],
               ["Contact", "#contact"],
-            ].map(([label, href]) => (
-              <li key={href}>
+            ].map(([label, href], index) => (
+              <li key={href} className={`animate-fade-in-up stagger-${Math.min(index + 1, 5)}`}>
                 <a
                   href={href}
-                  className="px-3 py-1 rounded-full hover:bg-white/10 transition focus:outline-none focus:ring-2 focus:ring-teal-400/60"
+                  className="px-3 py-1 rounded-full hover:bg-white/10 transition focus:outline-none focus:ring-2 focus:ring-teal-400/60 hover-lift nav-link"
                 >
                   {label}
                 </a>
@@ -207,28 +207,30 @@ export default function ModernResumeSite() {
       {/* HERO */}
       <section id="top" className="max-w-6xl mx-auto px-4 pt-10 md:pt-16 pb-8">
         <div className="grid md:grid-cols-[auto,1fr] items-center gap-6">
-          <Avatar />
+          <div className="animate-float">
+            <Avatar />
+          </div>
           <div>
-            <h1 className="text-2xl md:text-4xl font-extrabold tracking-tight text-white animate-fade-in">
+            <h1 className="text-2xl md:text-4xl font-extrabold tracking-tight text-white animate-bounce-in">
               {PROFILE.name}
             </h1>
-            <p className="mt-2 text-sm md:text-base text-slate-300">
+            <p className="mt-2 text-sm md:text-base text-slate-300 animate-fade-in-up stagger-1">
               {PROFILE.title}
             </p>
-            <div className="mt-4 flex flex-wrap items-center gap-4 text-xs md:text-sm">
-              <span className="inline-flex items-center gap-1"><MapPin size={16}/> {PROFILE.location}</span>
-              <a href={`tel:${PROFILE.phoneIntl}`} className="inline-flex items-center gap-1 hover:underline">
+            <div className="mt-4 flex flex-wrap items-center gap-4 text-xs md:text-sm animate-fade-in-up stagger-2">
+              <span className="inline-flex items-center gap-1 hover-glow"><MapPin size={16}/> {PROFILE.location}</span>
+              <a href={`tel:${PROFILE.phoneIntl}`} className="inline-flex items-center gap-1 hover:underline hover-bounce">
                 <Phone size={16}/> {PROFILE.phoneDisplay}
               </a>
-              <a href={PROFILE.socials.instagram} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 hover:underline"><Instagram size={16}/> Instagram</a>
-              <a href={PROFILE.socials.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 hover:underline"><Github size={16}/> GitHub</a>
-              <a href={PROFILE.socials.linkedin} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 hover:underline"><Linkedin size={16}/> LinkedIn</a>
+              <a href={PROFILE.socials.instagram} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 hover:underline hover-bounce"><Instagram size={16}/> Instagram</a>
+              <a href={PROFILE.socials.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 hover:underline hover-bounce"><Github size={16}/> GitHub</a>
+              <a href={PROFILE.socials.linkedin} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 hover:underline hover-bounce"><Linkedin size={16}/> LinkedIn</a>
             </div>
-            <p className="mt-5 max-w-2xl text-sm md:text-base text-slate-300/90">{PROFILE.summary}</p>
-            <div className="mt-6">
+            <p className="mt-5 max-w-2xl text-sm md:text-base text-slate-300/90 animate-fade-in-up stagger-3">{PROFILE.summary}</p>
+            <div className="mt-6 animate-fade-in-up stagger-4">
               <a
                 href="#projects"
-                className={`${accentGrad} text-slate-900 font-semibold inline-flex items-center gap-2 px-5 py-2 rounded-xl shadow hover:brightness-95 transition`}
+                className={`${accentGrad} text-slate-900 font-semibold inline-flex items-center gap-2 px-5 py-2 rounded-xl shadow hover:brightness-95 transition hover-lift hover-glow`}
               >
                 View Projects <ArrowRight size={18} />
               </a>
@@ -278,18 +280,24 @@ export default function ModernResumeSite() {
       <section id="skills" className="max-w-6xl mx-auto px-4 py-8">
         {sectionTitle("Skills")}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {SKILLS.map((s) => (
-            <HoverCard key={s.group}>
-              <div className="flex items-center gap-3 mb-3">
-                <div className={`${accentGrad} p-2 rounded-lg text-slate-900`}>
-                  {s.icon}
+          {SKILLS.map((s, index) => (
+            <div key={s.group} className={`animate-fade-in-up stagger-${Math.min(index + 1, 5)}`}>
+              <HoverCard>
+                <div className="flex items-center gap-3 mb-3">
+                  <div className={`${accentGrad} p-2 rounded-lg text-slate-900 hover-bounce animate-rotate-in`}>
+                    {s.icon}
+                  </div>
+                  <h4 className="font-semibold text-white">{s.group}</h4>
                 </div>
-                <h4 className="font-semibold text-white">{s.group}</h4>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {s.items.map((item) => chip(item))}
-              </div>
-            </HoverCard>
+                <div className="flex flex-wrap gap-2">
+                  {s.items.map((item, chipIndex) => (
+                    <span key={item} className={`animate-fade-in-up stagger-${chipIndex + 1}`}>
+                      {chip(item)}
+                    </span>
+                  ))}
+                </div>
+              </HoverCard>
+            </div>
           ))}
         </div>
       </section>
@@ -299,19 +307,27 @@ export default function ModernResumeSite() {
       <section id="projects" className="max-w-6xl mx-auto px-4 py-8">
         {sectionTitle("Projects")}
         <div className="grid md:grid-cols-3 gap-5">
-          {PROJECTS.map((p) => (
-            <HoverCard key={p.name}>
-              <div className="flex items-start justify-between">
-                <h4 className="text-white font-semibold">{p.name}</h4>
-                <a href={p.link} className="text-xs inline-flex items-center gap-1 hover:underline">
-                  Visit <ExternalLink size={14} />
-                </a>
+          {PROJECTS.map((p, index) => (
+            <div key={p.name} className={`animate-slide-in-${index % 2 === 0 ? 'left' : 'right'} stagger-${Math.min(index + 1, 5)}`}>
+              <div className="interactive-card">
+                <HoverCard>
+                  <div className="flex items-start justify-between">
+                    <h4 className="text-white font-semibold hover-glow">{p.name}</h4>
+                    <a href={p.link} className="text-xs inline-flex items-center gap-1 hover:underline hover-bounce">
+                      Visit <ExternalLink size={14} />
+                    </a>
+                  </div>
+                  <p className="mt-2 text-sm text-slate-300">{p.description}</p>
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    {p.stack.map((t, chipIndex) => (
+                      <span key={t} className={`animate-fade-in-up stagger-${chipIndex + 1}`}>
+                        {chip(t)}
+                      </span>
+                    ))}
+                  </div>
+                </HoverCard>
               </div>
-              <p className="mt-2 text-sm text-slate-300">{p.description}</p>
-              <div className="mt-3 flex flex-wrap gap-2">
-                {p.stack.map((t) => chip(t))}
-              </div>
-            </HoverCard>
+            </div>
           ))}
         </div>
       </section>
