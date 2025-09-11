@@ -164,7 +164,8 @@ export default {
 				'slide-in-right': 'slide-in-right 0.6s ease-out',
 				'fade-in-up': 'fade-in-up 0.6s ease-out',
 				'rotate-in': 'rotate-in 0.7s ease-out',
-				'wiggle': 'wiggle 1s ease-in-out infinite'
+				'wiggle': 'wiggle 1s ease-in-out infinite',
+				'spin-slow': 'spin 3s linear infinite'
 			}
 		}
 	},
