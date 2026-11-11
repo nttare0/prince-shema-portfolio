@@ -1,0 +1,36 @@
+{
+  "name": "younes-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@tsparticles/engine": "^3.3.0",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.3.0",
+    "clsx": "^2.1.0",
+    "framer-motion": "^11.0.6",
+    "lucide-react": "^0.344.0",
+    "mini-svg-data-uri": "^1.4.4",
+    "next": "14.1.0",
+    "next-intl": "^3.26.5",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-element-to-jsx-string": "^15.0.0",
+    "tailwind-merge": "^2.2.1",
+    "use-intl": "^3.26.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  }
+}
