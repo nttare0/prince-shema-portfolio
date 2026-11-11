@@ -10,7 +10,7 @@ import staticLink from "./assets/static-link.png";
 import document1 from "./assets/document1.png";
 import skill from "./assets/skill.png";
 
-export const products = [
+export const projects = [
   {
     title: "droptv",
     link: "https://droptv.vercel.app",
