@@ -1,20 +1,16 @@
 import { TracingBeam } from "@/components/ui/tracing-beam";
 import { ArrowUpRight, ChevronRight } from "lucide-react";
 import Image from "next/image";
-import { Outfit } from "next/font/google";
 import Link from "next/link";
 import { workData } from "@/data";
 import { WorkExperience } from "@/types";
 
-const outfit = Outfit({
-  subsets: ["latin"],
-});
 
 export default function WorkExperienceSection() {
   const work: WorkExperience[] = workData;
   return (
     <TracingBeam
-      className={`${outfit.className} h-auto max-w-[90%] bg-dark-black pl-8 py-10 lg:p-10 rounded-xl lg:max-w-5xl text-white`}
+      className={`h-auto max-w-[90%] bg-dark-black pl-8 py-10 lg:p-10 rounded-xl lg:max-w-5xl text-white`}
     >
       <div className=" flex flex-col gap-10">
         <header className=" text-2xl lg:text-4xl font-bold">Worked As,</header>

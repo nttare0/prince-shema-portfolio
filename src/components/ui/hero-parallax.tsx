@@ -119,10 +119,10 @@ export const Header = () => {
     return (
         <div className="max-w-7xl relative mx-auto py-20 md:py-40 text-center lg:text-start lg:px-4 w-full  left-0 top-0">
             <h1 className="text-3xl md:text-7xl font-bold text-white">
-                I've made <br /> Some cool projects
+                Things I've <br /> shipped
             </h1>
             <p className="max-w-2xl text-base md:text-xl mt-8 text-neutral-200">
-                With React, Next.js, TailwindCSS and more. The backend ranges from Node, Express, MongoDB, Prisma and more.
+                Selected projects, built in the open and deployed on Vercel. Source, stars and commit history on GitHub.
             </p>
         </div>
     );

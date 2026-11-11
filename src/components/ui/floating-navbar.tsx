@@ -68,7 +68,7 @@ export const FloatingNav = ({
                             "relative text-neutral-50 items-center flex hover:text-neutral-300 p-5"
                         )}
                     >
-                        <Image alt={navItem.alt} className="" src={navItem.icon} />
+                        <Image alt={navItem.alt} className="" src={navItem.icon} width={22} height={22} unoptimized />
                     </Link>
                 ))}
             </motion.div>
