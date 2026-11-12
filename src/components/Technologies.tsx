@@ -18,6 +18,14 @@ export default function TechnologiesSection() {
                     })
                 }
             </section>
+            <div className="flex justify-center pt-2">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                    src="https://skillicons.dev/icons?i=ts,js,react,nextjs,nodejs,python,tailwind,vite,git&theme=dark"
+                    alt="Tech stack"
+                    className="h-12 lg:h-14"
+                />
+            </div>
         </div>
     )
 }

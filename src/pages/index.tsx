@@ -1,5 +1,6 @@
 import HomePage from "@/components/HomePage";
 import { FloatingNav } from "@/components/ui/floating-navbar";
+import WorkExperienceSection from "@/components/WorkExperienceSection";
 import TechnologiesSection from "@/components/Technologies";
 import { HeroParallax } from "@/components/ui/hero-parallax";
 
@@ -11,6 +12,7 @@ export default function Home() {
     <div className="bg-black overflow-hidden">
       <FloatingNav navItems={navitems} />
       <HomePage />
+      <WorkExperienceSection />
       <TechnologiesSection />
       <HeroParallax projects={projects} />
     </div>

@@ -1,6 +1,6 @@
 # Prince Shema Portfolio
 
-Portfolio of **Ntare Shema Prince** ([@nttare0](https://github.com/nttare0)) — software engineer in Rwanda, building for the web.
+Portfolio of **nttare** ([@nttare0](https://github.com/nttare0)) — software engineer in Rwanda, building for the web.
 
 Next.js 14 · TypeScript · Tailwind CSS · framer-motion · tsparticles.
 

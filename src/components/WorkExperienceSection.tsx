@@ -25,6 +25,8 @@ export default function WorkExperienceSection() {
                   alt={w.company}
                   className="aspect-[3/2] object-contain lg:w-44"
                   src={w.logo}
+                  width={176}
+                  height={118}
                 />
               </div>
               <div className="flex flex-col gap-9 min-w-[85%] lg:full">
@@ -40,7 +42,7 @@ export default function WorkExperienceSection() {
                       href={w.link}
                     >
                       <p className=" text-gray-400 text-[0.8rem] lg:text-[1.2rem]">
-                        at, {w.company}.io
+                        {w.company}
                       </p>
                       <ArrowUpRight className="text-orange-300 w-8" />
                     </Link>

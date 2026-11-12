@@ -12,7 +12,7 @@ export default function HomePage() {
                 lg:gap-0 p-[1.7rem] pt-2 flex-col text-center h-3/4"
         >
           <h1 className="text-5xl font-bold lg:text-[5rem] flex flex-col">
-            Hi, I&apos;m Prince.
+            Hi, I&apos;m nttare.
             <br />a software engineer.
           </h1>
           <div className="text-md lg:text-xl pt-2 flex items-center justify-center flex-col">
