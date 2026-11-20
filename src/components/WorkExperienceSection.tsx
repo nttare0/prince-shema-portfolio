@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { workData } from "@/data";
 import { WorkExperience } from "@/types";
+import { Reveal } from "@/components/ScrollFX";
 
 
 export default function WorkExperienceSection() {
@@ -16,8 +17,8 @@ export default function WorkExperienceSection() {
         <header className=" text-2xl lg:text-4xl font-bold">Worked As,</header>
         {work.map((w, index) => {
           return (
+            <Reveal key={index} delay={0.1 * index} y={40}>
             <div
-              key={index}
               className="justify-between lg:justify-normal flex gap-2 w-full lg:gap-6 lg:min-w-96 "
             >
               <div className="pt-1 min-w-[15%] lg:min-w-[0%] lg:max-w-16">
@@ -60,6 +61,7 @@ export default function WorkExperienceSection() {
                 </div>
               </div>
             </div>
+            </Reveal>
           );
         })}
       </div>

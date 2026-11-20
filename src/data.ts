@@ -7,12 +7,18 @@ import zeolfLogo from "./assets/zeolf.png";
 import type { WorkExperience } from "./types";
 
 export const projects = [
-  { title: "droptv", link: "https://droptv.vercel.app", preview: "live" as const, lang: "TypeScript", stars: 2, updated: "Nov 2026" },
-  { title: "tiny-office", link: "https://tiny-office-smoky.vercel.app", preview: "live" as const, lang: "TypeScript", stars: 0, updated: "Nov 2026" },
-  { title: "stream12", link: "https://stream12-sand.vercel.app", preview: "live" as const, lang: "TypeScript", stars: 0, updated: "Nov 2026" },
-  { title: "static-link", link: "https://linknest-nttare.vercel.app", preview: "live" as const, lang: null, stars: 0, updated: "Nov 2026" },
-  { title: "document1", link: "https://github.com/nttare0/document1", preview: "github" as const, lang: "TypeScript", stars: 2, updated: "Nov 2026" },
-  { title: "skill", link: "https://github.com/nttare0/skill", preview: "github" as const, lang: "Python", stars: 2, updated: "Oct 2026" },
+  { title: "load-bearing", link: "https://load-bearing-pi.vercel.app", repo: "Load-Bearing.", preview: "live" as const, lang: "TypeScript", stars: 0, updated: "Nov 20, 2026" },
+  { title: "paper-style", link: "https://paper-style.vercel.app", repo: "paper-style", preview: "live" as const, lang: "TypeScript", stars: 1, updated: "Nov 19, 2026" },
+  { title: "drop", link: "https://zepvi.vercel.app", repo: "123", preview: "live" as const, lang: "TypeScript", stars: 2, updated: "Nov 18, 2026" },
+  { title: "indexroom", link: "https://indexroom-psi.vercel.app", repo: "all-my-creation", preview: "live" as const, lang: "JavaScript", stars: 1, updated: "Nov 18, 2026" },
+  { title: "shool", link: "https://shool-dusky.vercel.app", repo: "shool", preview: "live" as const, lang: "JavaScript", stars: 0, updated: "Nov 15, 2026" },
+  { title: "tiny-office", link: "https://tiny-office-smoky.vercel.app", repo: "tiny-office", preview: "live" as const, lang: "TypeScript", stars: 0, updated: "Nov 15, 2026" },
+  { title: "stream12", link: "https://stream12-sand.vercel.app", repo: "stream12", preview: "live" as const, lang: "TypeScript", stars: 0, updated: "Nov 14, 2026" },
+  { title: "screen-2-screen", link: "https://screen-2-screen.vercel.app", repo: "screen-2-screen", preview: "live" as const, lang: "Go", stars: 0, updated: "Nov 13, 2026" },
+  { title: "saving-404", link: "https://saving-404.vercel.app", repo: "saving-404", preview: "live" as const, lang: "TypeScript", stars: 0, updated: "Nov 12, 2026" },
+  { title: "linknest", link: "https://linknest-one-rosy.vercel.app", repo: "static-link", preview: "live" as const, lang: null, stars: 0, updated: "Nov 9, 2026" },
+  { title: "document1", link: "https://github.com/nttare0/document1", repo: "document1", preview: "github" as const, lang: "TypeScript", stars: 2, updated: "Nov 2026" },
+  { title: "skill", link: "https://github.com/nttare0/skill", repo: "skill", preview: "github" as const, lang: "Python", stars: 2, updated: "Oct 2026" },
 ];
 
 export const navitems = [
@@ -52,6 +58,7 @@ export const technologies = [
   "Python",
   "CSS",
   "C++",
+  "Go",
 ];
 
 // No community posts are published on GitHub — left intentionally empty.

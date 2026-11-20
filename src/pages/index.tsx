@@ -3,6 +3,7 @@ import { FloatingNav } from "@/components/ui/floating-navbar";
 import WorkExperienceSection from "@/components/WorkExperienceSection";
 import TechnologiesSection from "@/components/Technologies";
 import { HeroParallax } from "@/components/ui/hero-parallax";
+import { ScrollProgress } from "@/components/ScrollFX";
 
 import { projects } from "../data";
 import { navitems } from "../data";
@@ -10,6 +11,7 @@ import { navitems } from "../data";
 export default function Home() {
   return (
     <div className="bg-black overflow-hidden">
+      <ScrollProgress />
       <FloatingNav navItems={navitems} />
       <HomePage />
       <WorkExperienceSection />
